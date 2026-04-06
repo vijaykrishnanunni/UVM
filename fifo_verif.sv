@@ -371,7 +371,7 @@ module tb;
   logic rd_clk = 0;
 
   always #5 wr_clk = ~wr_clk;  // 100 MHz write clock
-  always #7 rd_clk = ~rd_clk;  // ~71 MHz read clock (async!)
+  always #7 rd_clk = ~rd_clk;  // ~71 MHz read clock 
 
   // Interface — clocks passed as ports
   fifo_if vif (.wr_clk(wr_clk), .rd_clk(rd_clk));
