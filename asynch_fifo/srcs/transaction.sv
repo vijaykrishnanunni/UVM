@@ -9,5 +9,5 @@ class fifo_tx extends uvm_sequence_item;
  function new(string name="fifo_tx");
    super.new(name);
  endfunction
-
+ 
 endclass
