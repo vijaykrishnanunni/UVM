@@ -11,7 +11,7 @@ module tb_top;
 
   fifo_if intf (.wr_clk(wr_clk), .rd_clk(rd_clk));
 
-  // DUT instance - connect to your async_fifo RTL
+  // DUT
   async_fifo dut (
     .wr_clk  (intf.wr_clk),
     .wr_rst_n(intf.wr_rst_n),
